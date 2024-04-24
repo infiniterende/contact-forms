@@ -1,33 +1,1058 @@
-@tailwind base;
-@tailwind components;
+/* Contact Form1 (Desktop View) */
+
+@tailwindcss base;
+@tailwindcss components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* --blue: #0072FF 25.5%;
+  --lightblue: #00C6FF 70%; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+.container1 {
+  background-image: linear-gradient(45deg, #0072FF, #00C6FF)
+}
+  /* Form Body */
+  .form {
+    position: absolute;
+  background: #FFFFFF;
+  border-radius: 41px;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  /* Line 1 */
+  .separator {
+  
+  border: 2px solid #163E79;
   }
-}
+  
+  /* Contact Form */
+  .contact-heading {
+  position: absolute;
+  width: 218px;
+  height: 39px;
+  left: 491px;
+  top: 442px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+  
+  color: rgba(22, 62, 121, 0.82);
+  }
+  
+  
+  /* SideBar */
+  .sidebar {
+  position: absolute;
+  width: 340px;
+  height: 1118px;
+  left: 59px;
+  top: 500px;
+  
+  background: rgba(0, 0, 0, 0.92);
+  border-radius: 39px;
+  }
+  
+  /* Select Template */
+  
+  .template {
+  position: absolute;
+  width: 195px;
+  height: 29px;
+  left: 132px;
+  top: 524px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  
+  }
+  
+  /* Simple Form */
+  .simpleForm {
+  position: absolute;
+  width: 124px;
+  height: 28px;
+  left: 98px;
+  top: 610px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 139.1%;
+  /* identical to box height, or 28px */
+  display: flex;
+  align-items: center;
+  
+  color: #00C6FF;
+  
+  }
+  
+  /* Floating Form */
+  .floatingForm {
+  position: absolute;
+  width: 137px;
+  height: 28px;
+  left: 98px;
+  top: 689px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 139.1%;
+  /* identical to box height, or 28px */
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Email Form */
+  .emailForm {
+  position: absolute;
+  width: 110px;
+  height: 28px;
+  left: 98px;
+  top: 767px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 139.1%;
+  /* identical to box height, or 28px */
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  
+  }
+  
+  /* Extended Form */
+  
+  .extendedForm {
+  position: absolute;
+  width: 151px;
+  height: 28px;
+  left: 98px;
+  top: 847px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 139.1%;
+  /* identical to box height, or 28px */
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Line 2 */
+  
+  .line2 {
+  position: absolute;
+  width: 342.01px;
+  height: 0px;
+  left: 57px;
+  top: 666px;
+  
+  border: 5px solid #FFFFFF;
+  }
+  
+  /* Line 3 */
+  .line3 {
+  position: absolute;
+  width: 342.01px;
+  height: 0px;
+  left: 59px;
+  top: 747px;
+  
+  border: 5px solid #FFFFFF;
+  }
+  
+  /* Line 4 */
+  .line4{
+  position: absolute;
+  width: 342.01px;
+  height: 0px;
+  left: 57px;
+  top: 826px;
+  
+  border: 5px solid #FFFFFF;
+  }
+  
+  /* Line 5 */
+  .line5{
+  position: absolute;
+  width: 342.01px;
+  height: 0px;
+  left: 57px;
+  top: 895px;
+  
+  border: 5px solid #FFFFFF;
+  }
+  
+  /* Rectangle 283 */
+  .rectangle283 {
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 229px;
+  height: 46px;
+  left: 491px;
+  top: 724px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+  /* Rectangle 285 */
+  .rectangle285 {
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 229px;
+  height: 46px;
+  left: 491px;
+  top: 825px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Rectangle 287 */
+  
+  .rectange287 {
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 492px;
+  height: 156px;
+  left: 491px;
+  top: 934px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Rectangle 284 */
+  
+  .rectangle284 {
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 229px;
+  height: 46px;
+  left: 754px;
+  top: 724px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Rectangle 286 */
+  
+  .rectangle286 {
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 229px;
+  height: 46px;
+  left: 754px;
+  top: 825px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+  /* Rectangle 282 */
+  .rectangle282 {
+  position: absolute;
+  width: 285px;
+  height: 73px;
+  left: 616px;
+  top: 1232px;
+  
+  background: #FFFFFF;
+  border: 1px dashed #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Get in touch */
+  .getintouch {
+  position: absolute;
+  width: 196px;
+  height: 44px;
+  left: 498px;
+  top: 594px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  /* identical to box height */
+  
+  color: #000000;
+  }
+  
+  
+  /* First Name * */
+  .firstname {
+  position: absolute;
+  width: 132px;
+  height: 27px;
+  left: 491px;
+  top: 694px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: #000000;
+  
+  }
+  
+  /* Email * */
+  .email1{
+  position: absolute;
+  width: 72px;
+  height: 27px;
+  left: 491px;
+  top: 795px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: #000000;
+  }
+  
+  
+  /* Message * */
+  .message {
+  position: absolute;
+  width: 104px;
+  height: 27px;
+  left: 491px;
+  top: 896px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: #000000;
+  }
+  
+  
+  /* Attachements */
+  .attachments {
+  position: absolute;
+  width: 142px;
+  height: 27px;
+  left: 491px;
+  top: 1115px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: #000000;
+  }
+  
+  
+  /* Last Name * */
+  .lastName {
+  position: absolute;
+  width: 129px;
+  height: 27px;
+  left: 754px;
+  top: 694px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: #000000;
+  }
+  
+  
+  /* Phone * */
+  .phone {
+  position: absolute;
+  width: 85px;
+  height: 27px;
+  left: 754px;
+  top: 795px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: #000000;
+  }
+  
+  
+  /* Leave your message and we’ll get back to you shortly. */
+  
+  .subheading2 {
+  position: absolute;
+  width: 465px;
+  height: 27px;
+  left: 497px;
+  top: 644px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: #000000;
+  
+  }
+  
+  /* Rectangle 276 */
+  .rectangle276 {
+  position: absolute;
+  width: 160px;
+  height: 62px;
+  left: 674px;
+  top: 1383px;
+  
+  background: #0029FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  }
+  
+  /* Rectangle 288 */
+  
+  .rectangle288 {
+  position: absolute;
+  width: 210px;
+  height: 62px;
+  left: 125px;
+  top: 1501px;
+  
+  background: #209B02;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  }
+  /* Submit */
+  
+  .submit {
+  position: absolute;
+  width: 86px;
+  height: 33px;
+  left: 711px;
+  top: 1396px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  
+  }
+  
+  /* Select Template */
+  
+  .select {
+  position: absolute;
+  width: 158px;
+  height: 27px;
+  left: 148px;
+  top: 1518px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Allowed file types: jpg, jpeg, png, gif, txt, pdf, doc, docx, xls, xlxs, odt, ppt, pptx, pps, ppsx, html, and less than 100 MB. */
+  
+  .fileDescription {
+  position: absolute;
+  width: 457px;
+  height: 94px;
+  left: 497px;
+  top: 1160px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  
+  color: rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  /* Choose file or drop here */
+  
+  .fileupload {
+  position: absolute;
+  width: 205px;
+  height: 25px;
+  left: 653px;
+  top: 1256px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  
+  color: #0029FF;
+  
+  }
+  
+  /* John */
+  
+  .firstname {
+  position: absolute;
+  width: 41px;
+  height: 27px;
+  left: 507px;
+  top: 733px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: rgba(0, 0, 0, 0.37);
+  
+  }
+  
+  /* user@domain.com */
+  
+  .email {
+  position: absolute;
+  width: 171px;
+  height: 27px;
+  left: 507px;
+  top: 833px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: rgba(0, 0, 0, 0.37);
+  
+  }
+  
+  /* Your questions or comments */
+  
+  .comments {
+  position: absolute;
+  width: 262px;
+  height: 27px;
+  left: 525px;
+  top: 961px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: rgba(0, 0, 0, 0.37);
+  
+  }
+  
+  /* +1-999-999-9999 */
+  
+  .phonenumber {
+  position: absolute;
+  width: 157px;
+  height: 27px;
+  left: 773px;
+  top: 833px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: rgba(0, 0, 0, 0.37);
+  }
+  
+  
+  /* Doe */
+  
+  .johndoe {
+  position: absolute;
+  width: 38px;
+  height: 27px;
+  left: 773px;
+  top: 733px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: rgba(0, 0, 0, 0.37);
+  
+  }
+  
+  /* Embed Custom Widgets on Your Website Effortlessly */
+  
+  .heading { 
+  position: absolute;
+  width: 1064px;
+  height: 47px;
+  left: 68px;
+  top: 196px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Arrow 1 */
+  
+  .arrow1 {
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 70.1px;
+  height: 0px;
+  left: 1028.95px;
+  top: 1682px;
+  
+  border: 6px solid #FFFFFF;
+  }
+  
+  /* Mobile View */
+  
+  .mobile {
+  position: absolute;
+  width: 223px;
+  height: 44px;
+  left: 789px;
+  top: 1660px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  text-align: center;
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Enhance Your Website's Functionality with Clicflo Widgets */
+  
+  a {
+    text-decoration: none;
+   
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  .subheading {
+  position: absolute;
+  width: 643px;
+  height: 101px;
+  left: 278px;
+  top: 264px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 139.1%;
+  /* or 45px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Top shadow */
+  .topshadow {
+  position: absolute;
+  width: 1200px;
+  height: 62px;
+  left: 0px;
+  top: -3219px;
+  
+  background: #000000;
+  }
+  
+  /* Nav */
+  
+  .nav {
+  position: absolute;
+  width: 1200px;
+  height: 62px;
+  left: 0px;
+  top: -3157px;
+  
+  }
+  
+  /* Nav */
+  .navBar {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  
+  background: #163E79;
+  }
+  
+  /* for Contact */
+  
+  .contactFor {
+  position: absolute;
+  width: 81px;
+  height: 36px;
+  left: 1096px;
+  top: 13px;
+  
+  background: #FFFFFF;
+  border-radius: 38px;
+  
+  }
+  /* Sign Up */
+  .signUp {
+  position: absolute;
+  width: 55px;
+  height: 19px;
+  left: 1109px;
+  top: 22px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  
+  color: rgba(0, 0, 0, 0.96);
+  
+  }
+  
+  /* image (5) 1 */
+  .image {
+  position: absolute;
+  width: 57px;
+  height: 62px;
+  left: 20px;
+  top: 0px;
+  
+  /* background: url(image (5).png); */
+  }
+  
+  /* image (5) 2 */
+  .image2{
+  position: absolute;
+  width: 254px;
+  height: 42px;
+  left: 77px;
+  top: 7px;
+  
+  /* background: url(image (5).png); */
+  }
+  
+  /* Forms */
+  
+  .forms {
+  position: absolute;
+  width: 52px;
+  height: 21px;
+  left: 905px;
+  top: 20px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  
+  }
+  
+  /* Home */
+  .home {
+  position: absolute;
+  width: 49px;
+  height: 21px;
+  left: 733px;
+  top: 20px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  
+  }
+  
+  /* Widgets */
+  .widget{
+  position: absolute;
+  width: 67px;
+  height: 21px;
+  left: 810px;
+  top: 20px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Contact Us */
+  
+  .contactus {
+  position: absolute;
+  width: 89px;
+  height: 21px;
+  left: 985px;
+  top: 21px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Nav */
+  
+  .nav2 {
+      position: absolute;
+  width: 1200px;
+  height: 62px;
+  left: 0px;
+  top: 62px;
+  }
+  
+  
+  /* Nav */
+  .nav3 {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  
+  background: #163E79;
+  
+  }
+  /* for Contact */
+  
+  .contactFor2 {
+  position: absolute;
+  width: 81px;
+  height: 36px;
+  left: 1096px;
+  top: 13px;
+  
+  background: #FFFFFF;
+  border-radius: 38px;
+  }
+  
+  /* Sign Up */
+  .signup {
+  position: absolute;
+  width: 55px;
+  height: 19px;
+  left: 1109px;
+  top: 22px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  
+  color: rgba(0, 0, 0, 0.96);
+  
+  }
+  
+  /* image (5) 1 */
+  .image5-1 {
+  position: absolute;
+  width: 57px;
+  height: 62px;
+  left: 20px;
+  top: 0px;
+  
+  /* background: url(image (5).png); */
+  }
+  
+  /* image (5) 2 */
+  .image5-2 {
+  position: absolute;
+  width: 254px;
+  height: 42px;
+  left: 77px;
+  top: 7px;
+  
+  /* background: url(image (5).png); */
+  
+  }
+  /* Forms */
+  .forms {
+  position: absolute;
+  width: 52px;
+  height: 21px;
+  left: 905px;
+  top: 20px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  
+  }
+  
+  /* Home */
+  .homePage {
+  position: absolute;
+  width: 49px;
+  height: 21px;
+  left: 733px;
+  top: 20px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Widgets */
+  .widgets {
+  position: absolute;
+  width: 67px;
+  height: 21px;
+  left: 810px;
+  top: 20px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  
+  }
+  
+  /* Contact Us */
+  .contactus{
+  position: absolute;
+  width: 89px;
+  height: 21px;
+  left: 985px;
+  top: 21px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  color: #FFFFFF;
+  }
+  
+  
+  /* Top shadow */
+  .topshadow {
+  position: absolute;
+  width: 1200px;
+  height: 62px;
+  left: 0px;
+  top: 0px;
+  
+  background: #000000;
+  }
