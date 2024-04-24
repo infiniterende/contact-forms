@@ -1,7 +1,7 @@
-## Contact Forms
+# Contact Forms
 
-# Routes
-/å
+### Routes
+/
 /simpleform
 /floatingform
 /emailform
