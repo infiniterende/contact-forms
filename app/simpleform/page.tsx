@@ -4,6 +4,9 @@ import "../globals.css";
 import React, { useEffect, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Form from "../components/Form";
+
+import Navbar from "../components/Navbar";
+
 const SimpleFormPage = () => {
   const [form, setForm] = useState<any>({});
 
@@ -19,51 +22,7 @@ const SimpleFormPage = () => {
 
   return (
     <div className="container container1 flex  flex-col items-center justify-center h-full bg-blue-500 w-full">
-      <nav className="bg-blue-900 p-4 w-full h-auto">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-white"> Clickflo Widgets </h1>
-          <div className="text-white font-bold"></div>
-
-          {/* Navigation Links */}
-          <ul className="flex justify-between ">
-            <li>
-              <a
-                href="#"
-                className="p-6 font-bold text-white hover:text-gray-300"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="p-6 font-bold text-white hover:text-gray-300"
-              >
-                Widgets
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="p-6 font-bold text-white hover:text-gray-300"
-              >
-                Form
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="p-6 font-bold text-white hover:text-gray-300"
-              >
-                Contact Us
-              </a>
-            </li>
-          </ul>
-
-          <div className="bg-white rounded-full p-2">Sign Up</div>
-        </div>
-      </nav>
-
+      <Navbar />
       <h1 className="text-white">
         Embed Custom <span className="text-blue-900"> Widgets </span> on Your
         Website <span className="text-blue-900">Effortlessly</span>
